@@ -50,7 +50,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
 }
 
 .visually-hidden {
@@ -248,6 +248,7 @@ body {
   background-color: var(--section-bgr);
 }
 .team-container {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -266,6 +267,8 @@ body {
   text-align: center;
 }
 .team-list-item {
+  background-color: var(--general-wight);
+  outline: 2px solid var(--frame-color)
 }
 .team-list-title {
   margin-top: 30px;
