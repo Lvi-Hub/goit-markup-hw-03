@@ -31,6 +31,7 @@ portfolio             #F5F5F5
   --section-bgr: #f5f4fa;
   --hero-bgr-color: #2f303a;
   --btn-background: #f5f4fa;
+  --frame-color: #eeeeee;
 }
 
 h1,
@@ -49,7 +50,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid orange; */
+  outline: 2px solid orange;
 }
 
 .visually-hidden {
@@ -198,8 +199,7 @@ body {
 }
 
 .rules-container {
-  padding-top: 84px;
-  padding-bottom: 84px;
+  padding-top: 94px;
   background-color: var(--general-wight);
 }
 .rules-title {
@@ -227,6 +227,7 @@ body {
 }
 .development-container {
   background-color: var(--general-wight);
+  padding-top: 94px;
 }
 .development-title {
   font-size: 36px;
@@ -247,7 +248,7 @@ body {
   background-color: var(--section-bgr);
 }
 .team-container {
-  margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -282,10 +283,11 @@ body {
 /* footer */
 
 .footer {
-  padding-top: 60px;
   background-color: var(--hero-bgr-color);
 }
 .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .link-logo {
@@ -324,23 +326,40 @@ body {
 }
 
 /*============= Portfolio =============*/
-.filters {
-}
-.filters-title {
-}
-.filters-list {
-}
+
 /* Section Example */
 .example {
-  background-color: var(--general-wight);
+    background-color: var(--general-wight);
+}
+.container-example {
+  padding-bottom: 96px;
 }
 .example-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+  text-align: left;
+  margin-top: 50px;
 }
 .example-link {
+  
 }
-.link {
+.example-list li {
+  outline: 2px solid var(--frame-color);
+}
+.filters {
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 80px;
 }
 .example-title {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -348,6 +367,8 @@ body {
   letter-spacing: 0.06em;
 }
 .example-text {
+  margin-left: 24px;
+  margin-bottom: 20px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
